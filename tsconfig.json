@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+<<<<<<< HEAD
+    "module": "commonjs",
+    "moduleResolution": "node",
+=======
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+>>>>>>> 5cdc0672036fe83f8e3093a6ab9c2ab1ba4dd2fc
+
+    "target": "ES2020",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "typeRoots": ["./src/types", "./node_modules/@types"]
+  },
+  "include": ["src"]
+}
