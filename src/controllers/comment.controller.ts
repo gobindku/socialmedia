@@ -11,7 +11,8 @@ import mongoose from "mongoose";
 export const createComment = async (req: Request, res: Response) => {
   try {
     const userId = req.user?._id;
-    const { postId } = req.params;
+    const { postId: rawPostId } = req.params;
+    const postId = String(rawPostId);
     const { comment } = req.body;
 
     if (!userId) {
